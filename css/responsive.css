@@ -1,0 +1,171 @@
+/* ==========================================================================
+   Gambetta fleurs — responsive (desktop first)
+   ========================================================================== */
+
+/* ---------- Tablette large ---------- */
+@media (max-width: 1120px) {
+  .hero-inner { gap: 44px; }
+  .hero-carte { left: -20px; }
+  .avis-grille { grid-template-columns: repeat(2, 1fr); }
+  .atelier-inner { gap: 52px; }
+  .abonnement-inner { gap: 52px; }
+}
+
+/* ---------- Tablette ---------- */
+@media (max-width: 1024px) {
+  .grille-produits { grid-template-columns: repeat(2, 1fr); gap: 28px 20px; }
+
+  .reassurance {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px 28px;
+    margin-top: 56px;
+  }
+
+  .abonnement-inner,
+  .atelier-inner,
+  .infos-inner {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+  .abonnement-visuel { max-width: 440px; }
+  .atelier-visuels { max-width: 520px; }
+
+  .boutique, .abonnement, .surmesure, .atelier, .avis, .infos { padding-top: 84px; padding-bottom: 84px; }
+}
+
+/* ---------- Nav → burger ---------- */
+@media (max-width: 940px) {
+  .nav { display: none; }
+  .burger { display: flex; }
+  .btn-panier { padding: 10px 13px; }
+  .btn-panier-label { display: none; }
+  .header-inner { padding: 0 20px; }
+}
+
+/* ---------- Mobile large ---------- */
+@media (max-width: 768px) {
+  body { font-size: 16px; }
+
+  .topbar { font-size: 0.78rem; padding: 9px 14px; }
+  .topbar .topbar-sep { margin: 0 8px; }
+  .topbar p span:last-child { display: none; }
+  .topbar .topbar-sep { display: none; }
+
+  .hero { padding-top: 16px; }
+  .hero-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 16px 22px 0;
+  }
+  .hero-texte h1 { max-width: none; }
+  .hero-sous { font-size: 1.05rem; }
+  .hero-cta .btn { flex: 1 1 100%; }
+  .hero-visuel > img { border-radius: 190px 190px var(--radius) var(--radius); aspect-ratio: 4 / 4.2; }
+  .hero-carte { left: 12px; bottom: -22px; width: 148px; }
+
+  .reassurance {
+    margin-top: 48px;
+    padding: 24px 22px;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+  .reassurance-item { align-items: flex-start; }
+  .reassurance-item svg { width: 26px; height: 26px; }
+  .reassurance-item p { font-size: 0.88rem; }
+  .reassurance-item span { font-size: 0.82rem; }
+
+  .boutique, .abonnement, .surmesure, .atelier, .avis, .infos { padding-top: 68px; padding-bottom: 68px; }
+
+  .filtres { gap: 8px; margin-top: 32px; padding: 0 22px; justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .filtres::-webkit-scrollbar { display: none; }
+  .filtre { white-space: nowrap; flex: none; }
+
+  .grille-produits { padding: 0 22px; margin-top: 30px; gap: 26px 14px; }
+  .carte-produit-nom { font-size: 1.15rem; }
+  .carte-ajout { width: 46px; height: 46px; right: 10px; bottom: 10px; }
+
+  .abonnement-inner, .atelier-inner, .infos-inner { padding: 0 22px; }
+  .abonnement-visuel { max-width: none; }
+  .abonnement-visuel::before { inset: 18px -14px -14px 18px; }
+  .formule-detail { display: none; }
+
+  .surmesure-liste { padding: 0 22px; margin-top: 36px; }
+  .surmesure-item {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 30px 0;
+  }
+  .surmesure-num { font-size: 1.9rem; }
+  .surmesure-item .btn { justify-self: start; }
+
+  .atelier-visuels { max-width: none; padding-bottom: 70px; }
+  .atelier-texte blockquote { font-size: 1.3rem; }
+
+  .avis-grille { grid-template-columns: 1fr; gap: 16px; padding: 0 22px; margin-top: 38px; }
+
+  .horaires th, .horaires td { font-size: 0.92rem; }
+
+  .footer-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 56px 22px 36px;
+  }
+  .footer-bas { flex-direction: column; padding: 20px 22px 26px; }
+
+  .barre-mobile { display: block; }
+  .barre-mobile[hidden] { display: none; }
+  body.panier-plein { padding-bottom: 84px; }
+
+  /* Modale produit : une colonne */
+  .modale { padding: 0; align-items: flex-end; }
+  .modale-boite {
+    border-radius: var(--radius) var(--radius) 0 0;
+    max-height: calc(100vh - 32px);
+  }
+  .modale-produit-boite { grid-template-columns: 1fr; max-width: none; }
+  .mp-visuel img {
+    border-radius: var(--radius) var(--radius) 0 0;
+    aspect-ratio: 4 / 3;
+  }
+  .mp-corps { padding: 26px 22px 30px; }
+
+  .modale-commande-boite { max-width: none; }
+  .mc-tete { padding: 24px 22px 0; }
+  .mc-corps { padding: 22px 22px 30px; }
+  .mc-etapes { gap: 0; }
+  .mc-etapes li { padding: 10px 8px 12px; font-size: 0.82rem; gap: 6px; }
+  .mc-2col { grid-template-columns: 1fr; gap: 0; }
+  .mc-choix-mode { grid-template-columns: 1fr; }
+  .mc-actions { flex-direction: column-reverse; }
+
+  .modale-confirm-boite { border-radius: var(--radius) var(--radius) 0 0; }
+
+  .modale-legal-boite { max-width: none; padding: 30px 22px 28px; border-radius: var(--radius) var(--radius) 0 0; }
+  .modale-legal-boite > h2 { font-size: 1.5rem; }
+
+  .panier { width: 100vw; }
+
+  .toasts { bottom: 96px; left: 16px; right: 16px; transform: none; }
+  .toast { width: 100%; justify-content: center; text-align: center; }
+}
+
+/* ---------- Petit mobile ---------- */
+@media (max-width: 480px) {
+  .logo-texte { font-size: 1.25rem; }
+  .logo-texte small { font-size: 0.55rem; }
+
+  h1 { font-size: 2.35rem; }
+
+  .grille-produits { grid-template-columns: 1fr 1fr; }
+  .carte-produit.vedette { grid-column: span 2; }
+  .carte-produit-corps { padding: 12px 2px 0; }
+  .carte-produit-nom { font-size: 1.05rem; }
+  .carte-produit-compo { font-size: 0.84rem; }
+  .carte-produit-prix { font-size: 0.95rem; }
+
+  .mc-cal-grille { gap: 2px; }
+  .mc-cal-jour { min-height: 42px; font-size: 0.88rem; }
+
+  .hero-avis { align-items: flex-start; }
+  .avis-carte { padding: 24px 20px; }
+}

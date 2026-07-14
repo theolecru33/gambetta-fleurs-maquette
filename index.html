@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gambetta fleurs · Artisan fleuriste à Arcachon · Livraison sur le Bassin</title>
+<meta name="description" content="Artisan fleuriste au 33 avenue Gambetta à Arcachon. Bouquets composés le matin même, livraison le jour même sur le Bassin, retrait boutique gratuit, abonnement floral, mariage et deuil.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Gambetta fleurs · Artisan fleuriste à Arcachon">
+<meta property="og:description" content="Bouquets composés le matin même, livrés le jour même sur le Bassin d'Arcachon.">
+<meta property="og:type" content="website">
+<link rel="preload" href="fonts/Gambetta-Semibold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css?v=5">
+<link rel="stylesheet" href="css/responsive.css?v=5">
+<link rel="icon" type="image/svg+xml" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="%232C4534"/><path d="M16 25V12M16 12c0-4.5 3-6.5 6.5-6.5C22.5 10 20 12 16 12Zm0 0c0-4.5-3-6.5-6.5-6.5C9.5 10 12 12 16 12Zm0 6c0-3 2-4.5 5-4.5-.3 3-1.8 4.5-5 4.5Z" stroke="%23FAF7F0" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg>'>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Florist",
+  "name": "Gambetta fleurs",
+  "telephone": "+33556835679",
+  "email": "gambettafleurscontact@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "33 avenue Gambetta",
+    "postalCode": "33120",
+    "addressLocality": "Arcachon",
+    "addressCountry": "FR"
+  },
+  "openingHours": ["Mo 14:30-19:00", "Tu-Sa 09:30-19:00", "Su 09:30-13:00"],
+  "priceRange": "€€"
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#boutique">Aller à la boutique</a>
+
+<!-- Bandeau promesse livraison -->
+<div class="topbar" id="topbar">
+  <p><span id="topbar-cutoff">Commandé avant 14h, livré le jour même sur Arcachon et le Bassin</span><span class="topbar-sep" aria-hidden="true">·</span><span>Livraison partout en France · Retrait boutique gratuit</span></p>
+</div>
+
+<!-- Header -->
+<header class="header" id="header">
+  <div class="header-inner">
+    <a class="logo" href="#accueil" aria-label="Gambetta fleurs, retour en haut de page">
+      <svg class="logo-brin" viewBox="0 0 26 30" aria-hidden="true"><path d="M13 28V9M13 9c0-5 3.5-7.5 7.5-7.5C20.5 6.5 18 9 13 9Zm0 0c0-5-3.5-7.5-7.5-7.5C5.5 6.5 8 9 13 9Zm0 7.5c0-3.5 2.5-5 5.5-5-.4 3.5-2 5-5.5 5Z" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg>
+      <span class="logo-texte"><span class="logo-ligne">Gambetta <em>fleurs</em></span><small>Artisan fleuriste · Arcachon</small></span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Navigation principale">
+      <a href="#boutique">La boutique</a>
+      <a href="#abonnement">L'abonnement</a>
+      <a href="#surmesure">Sur mesure</a>
+      <a href="#atelier">L'atelier</a>
+      <a href="#infos">Infos pratiques</a>
+      <a class="nav-tel" href="tel:+33556835679">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 3h3l1.5 4L6.8 8.6a12 12 0 0 0 4.6 4.6L13 11.5l4 1.5v3a1.8 1.8 0 0 1-2 1.8C8.5 17 3 11.5 2.2 5A1.8 1.8 0 0 1 4 3Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+        05 56 83 56 79
+      </a>
+    </nav>
+    <div class="header-actions">
+      <button class="btn-panier" id="btn-panier" type="button" aria-label="Ouvrir le panier">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 9.5h15l-1.3 9a2 2 0 0 1-2 1.7H7.8a2 2 0 0 1-2-1.7l-1.3-9Zm3 0 2-5.5m7.5 5.5-2-5.5M9 13v3.5M15 13v3.5M12 13v3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span class="panier-compte" id="panier-compte" hidden>0</span>
+        <span class="btn-panier-label">Panier</span>
+      </button>
+      <button class="burger" id="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu-mobile">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <!-- Menu mobile -->
+  <div class="menu-mobile" id="menu-mobile" hidden>
+    <nav aria-label="Navigation mobile">
+      <a href="#boutique">La boutique</a>
+      <a href="#abonnement">L'abonnement</a>
+      <a href="#surmesure">Sur mesure</a>
+      <a href="#atelier">L'atelier</a>
+      <a href="#infos">Infos pratiques</a>
+    </nav>
+    <a class="menu-mobile-tel" href="tel:+33556835679">Appeler la boutique · 05 56 83 56 79</a>
+  </div>
+</header>
+
+<main class="site-main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="accueil">
+    <div class="hero-inner">
+      <div class="hero-texte">
+        <p class="kicker hero-kicker">Artisan fleuriste à Arcachon depuis 2019</p>
+        <h1>Des fleurs du jour, <em>composées à la main</em>, à Arcachon.</h1>
+        <p class="hero-sous">Flora choisit ses fleurs au petit matin et compose chaque bouquet dans son atelier de l'avenue Gambetta. Commandez en ligne, faites livrer sur le Bassin comme partout en France, ou passez le chercher en boutique.</p>
+        <div class="hero-cta">
+          <a class="btn btn-plein" href="#boutique">Voir les bouquets</a>
+          <a class="btn btn-ligne" href="tel:+33556835679">
+            <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 3h3l1.5 4L6.8 8.6a12 12 0 0 0 4.6 4.6L13 11.5l4 1.5v3a1.8 1.8 0 0 1-2 1.8C8.5 17 3 11.5 2.2 5A1.8 1.8 0 0 1 4 3Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            Un bouquet sur mesure ?
+          </a>
+        </div>
+        <p class="hero-avis" id="hero-avis">
+          <span class="pastille-google" aria-hidden="true"><svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
+          <span class="etoiles" aria-hidden="true">★★★★★</span>
+          <span><strong>4,7 sur 5</strong> sur Google, plus de 100 avis</span>
+        </p>
+      </div>
+      <div class="hero-visuel">
+        <img src="img/hero-atelier.jpg" alt="L'atelier de Gambetta fleurs baigné de lumière, paniers fleuris et verdure près de la fenêtre" width="1800" height="1272" fetchpriority="high">
+        <figure class="hero-carte">
+          <img src="img/b-kraft-signature.jpg" alt="Bouquet signature emballé dans son papier kraft" width="300" height="375" loading="lazy">
+          <figcaption>Le bouquet de Flora<span>à partir de 25 €</span></figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="reassurance" aria-label="Nos engagements">
+      <div class="reassurance-item">
+        <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M14 24V10M14 10c0-5 3.5-7 7-7 0 5-3 7-7 7Zm0 0c0-5-3.5-7-7-7 0 5 3 7 7 7Zm0 6c0-3.5 2.5-5 5.5-5-.4 3.5-2.2 5-5.5 5Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <p><strong>Composé le matin même</strong><span>avec les fleurs du marché</span></p>
+      </div>
+      <div class="reassurance-item">
+        <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M3 19V8.5A1.5 1.5 0 0 1 4.5 7H16v12M16 10h5l4 4.5V19h-3M3 19h2m4.5 0H16m3 0h-1" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7.5" cy="20" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="19.5" cy="20" r="2.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        <p><strong>Livré le jour même sur le Bassin</strong><span>et partout en France en 24 à 48h</span></p>
+      </div>
+      <div class="reassurance-item">
+        <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M5 11h18v11a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V11Zm2 0V8.8C7 5.6 9.6 3 12.8 3h2.4C18.4 3 21 5.6 21 8.8V11" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p><strong>Retrait boutique gratuit</strong><span>ouvert 7 jours sur 7</span></p>
+      </div>
+      <div class="reassurance-item">
+        <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M4 6h20v14a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 4 20V6Zm4 5h12M8 15h7" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <p><strong>Carte manuscrite offerte</strong><span>vos mots, écrits à la main</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BOUTIQUE ============ -->
+  <section class="boutique" id="boutique">
+    <div class="section-tete">
+      <p class="kicker">La boutique en ligne</p>
+      <h2>Les créations <em>de la semaine</em></h2>
+      <p class="section-intro">Douze créations qui suivent les saisons et les arrivages du marché. Chaque bouquet part avec sa carte manuscrite et ses conseils d'entretien.</p>
+    </div>
+    <div class="filtres" role="group" aria-label="Filtrer les créations par occasion" id="filtres">
+      <button type="button" class="filtre actif" data-filtre="tous" aria-pressed="true">Tout voir</button>
+      <button type="button" class="filtre" data-filtre="anniversaire" aria-pressed="false">Anniversaire</button>
+      <button type="button" class="filtre" data-filtre="amour" aria-pressed="false">Amour</button>
+      <button type="button" class="filtre" data-filtre="merci" aria-pressed="false">Merci</button>
+      <button type="button" class="filtre" data-filtre="deuil" aria-pressed="false">Deuil</button>
+      <button type="button" class="filtre" data-filtre="sechees" aria-pressed="false">Fleurs séchées</button>
+      <button type="button" class="filtre" data-filtre="poursoi" aria-pressed="false">Pour soi</button>
+    </div>
+    <div class="grille-produits" id="grille-produits">
+      <!-- Cartes produit générées par js/main.js -->
+    </div>
+    <p class="boutique-note">Selon les arrivages, une fleur peut être remplacée par une variété équivalente ou supérieure. L'esprit, la générosité et la valeur du bouquet restent les mêmes, c'est notre engagement.</p>
+  </section>
+
+  <!-- ============ ABONNEMENT ============ -->
+  <section class="abonnement" id="abonnement">
+    <div class="abonnement-inner">
+      <div class="abonnement-visuel">
+        <img src="img/b-boutique-chaise.jpg" alt="Bouquet de la semaine dans son papier kraft, posé sur une chaise de l'atelier" width="700" height="1244" loading="lazy">
+      </div>
+      <div class="abonnement-texte">
+        <p class="kicker">L'abonnement floral</p>
+        <h2>Des fleurs à la maison, <em>toutes les semaines</em></h2>
+        <p>Flora compose pour vous un bouquet du moment et vous le livre chaque semaine ou tous les quinze jours. Sans engagement, vous suspendez ou arrêtez quand vous voulez, la livraison est offerte.</p>
+        <ul class="abonnement-formules" id="abonnement-formules">
+          <li>
+            <span class="formule-nom">Le bouquet</span>
+            <span class="formule-detail">une douzaine de tiges de saison</span>
+            <span class="formule-prix">25 € <small>/ bouquet</small></span>
+          </li>
+          <li>
+            <span class="formule-nom">Le généreux</span>
+            <span class="formule-detail">une vingtaine de tiges, notre préféré</span>
+            <span class="formule-prix">35 € <small>/ bouquet</small></span>
+          </li>
+          <li>
+            <span class="formule-nom">L'opulent</span>
+            <span class="formule-detail">le grand format, pour les belles pièces</span>
+            <span class="formule-prix">49 € <small>/ bouquet</small></span>
+          </li>
+        </ul>
+        <button class="btn btn-plein" type="button" id="btn-abonnement">Composer mon abonnement</button>
+        <p class="abonnement-pro">Vous êtes un restaurant, une boutique, un cabinet ? Fleurissez votre accueil chaque semaine, <a href="tel:+33556835679">parlons-en au 05 56 83 56 79</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SUR MESURE ============ -->
+  <section class="surmesure" id="surmesure">
+    <div class="section-tete">
+      <p class="kicker">Le sur mesure</p>
+      <h2>Les grands moments <em>se préparent ensemble</em></h2>
+    </div>
+    <div class="surmesure-liste">
+      <article class="surmesure-item">
+        <span class="surmesure-num" aria-hidden="true">01</span>
+        <div class="surmesure-corps">
+          <h3>Mariages</h3>
+          <p>Bouquet de mariée, boutonnières, décor de l'église et de la salle. Flora vous reçoit en boutique, écoute votre histoire et dessine une ambiance florale qui vous ressemble.</p>
+        </div>
+        <a class="btn btn-ligne" href="tel:+33556835679">Prendre rendez-vous</a>
+      </article>
+      <article class="surmesure-item">
+        <span class="surmesure-num" aria-hidden="true">02</span>
+        <div class="surmesure-corps">
+          <h3>Deuil</h3>
+          <p>Gerbes, couronnes et coussins, préparés avec soin et livrés directement à la cérémonie. Nous assurons aussi l'entretien des sépultures au cimetière d'Arcachon. Au téléphone comme en boutique, nous prenons le temps qu'il faut.</p>
+        </div>
+        <a class="btn btn-ligne" href="tel:+33556835679">Nous appeler</a>
+      </article>
+      <article class="surmesure-item">
+        <span class="surmesure-num" aria-hidden="true">03</span>
+        <div class="surmesure-corps">
+          <h3>Entreprises et événements</h3>
+          <p>Réceptions, séminaires, vitrines. Nous fleurissons vos espaces et proposons aussi la location de plantes pour vos événements professionnels sur le Bassin.</p>
+        </div>
+        <a class="btn btn-ligne" href="mailto:gambettafleurscontact@gmail.com?subject=Demande%20de%20devis">Demander un devis</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ ATELIER ============ -->
+  <section class="atelier" id="atelier">
+    <div class="atelier-inner">
+      <div class="atelier-visuels">
+        <img class="atelier-img-1" src="img/atelier-mains.jpg" alt="Les mains de Flora emballant un bouquet rose et blanc dans l'atelier" width="900" height="1189" loading="lazy">
+        <img class="atelier-img-2" src="img/portrait-fleuriste.jpg" alt="Flora, souriante devant sa boutique, un bouquet à la main" width="800" height="1200" loading="lazy">
+      </div>
+      <div class="atelier-texte">
+        <p class="kicker">L'atelier</p>
+        <h2>Derrière chaque bouquet, <em>il y a Flora</em></h2>
+        <blockquote>« Composer un bouquet, c'est plus qu'un métier. C'est une passion et un art. »</blockquote>
+        <p>Ancienne employée de la boutique, Flora Marti l'a reprise en 2019. Depuis, avec Pénélope et Sarah, elle tient le 33 avenue Gambetta, en plein cœur des rues piétonnes d'Arcachon, à deux pas du Parc Mauresque.</p>
+        <p>Ici, les fleurs sont de saison, une partie vient de production bordelaise, et chaque carte est écrite au stylo, jamais à l'imprimante. Vous trouverez aussi des plantes vertes et fleuries, des fleurs séchées dans l'air du temps, et le conseil qui va avec. Poussez la porte, on compose selon vos goûts et votre budget.</p>
+        <ul class="atelier-points">
+          <li>Fleurs fraîches choisies au petit matin, en partie de production bordelaise</li>
+          <li>Séchées et fraîches se marient sur demande</li>
+          <li>Plantes d'intérieur et d'extérieur, avec les conseils d'entretien</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AVIS ============ -->
+  <section class="avis" id="avis">
+    <div class="section-tete">
+      <p class="kicker">Ils nous fleurissent</p>
+      <h2>Les mots <em>de nos clients</em></h2>
+      <p class="section-intro avis-note-google" id="avis-note">
+        <span class="pastille-google" aria-hidden="true"><svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
+        <span class="etoiles" aria-hidden="true">★★★★★</span>
+        <span><strong>4,7 sur 5</strong>, sur plus de 100 avis Google</span>
+      </p>
+    </div>
+    <div class="avis-grille" id="avis-grille">
+      <!-- Avis remplis par js/main.js -->
+    </div>
+    <div class="avis-pied">
+      <a class="avis-lien-google" href="https://www.google.com/maps/search/?api=1&query=Gambetta+fleurs+33+avenue+Gambetta+33120+Arcachon" target="_blank" rel="noopener">
+        <span class="pastille-google" aria-hidden="true"><svg viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg></span>
+        Voir tous les avis sur Google
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ INFOS PRATIQUES ============ -->
+  <section class="infos" id="infos">
+    <div class="section-tete">
+      <p class="kicker">Infos pratiques</p>
+      <h2>Passer nous voir, <em>ou se faire livrer</em></h2>
+    </div>
+    <div class="infos-inner">
+      <div class="infos-bloc infos-venir">
+        <h3>La boutique</h3>
+        <address>
+          <strong>Gambetta fleurs</strong><br>
+          33 avenue Gambetta<br>
+          33120 Arcachon
+        </address>
+        <div class="infos-contacts">
+          <a href="tel:+33556835679">05 56 83 56 79</a>
+          <a href="mailto:gambettafleurscontact@gmail.com">gambettafleurscontact@gmail.com</a>
+          <a href="https://www.google.com/maps/search/?api=1&query=Gambetta+fleurs+33+avenue+Gambetta+33120+Arcachon" target="_blank" rel="noopener">Voir l'itinéraire</a>
+          <a href="https://www.instagram.com/gambettafleurs/" target="_blank" rel="noopener">Instagram @gambettafleurs</a>
+        </div>
+        <table class="horaires" id="horaires">
+          <caption>Horaires d'ouverture</caption>
+          <tbody>
+            <tr data-jour="1"><th scope="row">Lundi</th><td>14h30 à 19h</td></tr>
+            <tr data-jour="2"><th scope="row">Mardi</th><td>9h30 à 19h</td></tr>
+            <tr data-jour="3"><th scope="row">Mercredi</th><td>9h30 à 19h</td></tr>
+            <tr data-jour="4"><th scope="row">Jeudi</th><td>9h30 à 19h</td></tr>
+            <tr data-jour="5"><th scope="row">Vendredi</th><td>9h30 à 19h</td></tr>
+            <tr data-jour="6"><th scope="row">Samedi</th><td>9h30 à 19h</td></tr>
+            <tr data-jour="0"><th scope="row">Dimanche et jours fériés</th><td>9h30 à 13h</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="infos-bloc infos-livraison">
+        <h3>La livraison</h3>
+        <p>Un tarif tout simple, partout en France. Sur le Bassin, c'est nous qui livrons, du mardi au samedi : commandé avant 14h, votre bouquet arrive le jour même. Plus loin, vos fleurs voyagent dans un colis pensé pour elles et arrivent en 24 à 48h.</p>
+        <ul class="zones">
+          <li><span>Livraison partout en France <small>le jour même sur le Bassin, 24/48h ailleurs</small></span><span class="zone-prix">15 €</span></li>
+          <li><span>Retrait boutique <small>7 jours sur 7, aux horaires d'ouverture</small></span><span class="zone-prix">gratuit</span></li>
+        </ul>
+        <p class="zones-offerte">Livraison offerte dès 60 € d'achat.</p>
+        <div class="faq" id="faq">
+          <h3>Questions fréquentes</h3>
+          <details>
+            <summary>Puis-je être livré aujourd'hui ?</summary>
+            <p>Sur le Bassin, oui : du mardi au samedi, pour toute commande passée avant 14h. Après 14h, votre bouquet part le jour ouvré suivant, composé du matin.</p>
+          </details>
+          <details>
+            <summary>Livrez-vous en dehors du Bassin ?</summary>
+            <p>Oui, partout en France, au même tarif de 15 € (offert dès 60 € d'achat). Vos fleurs sont préparées le matin de l'expédition, emballées dans un colis conçu pour les protéger, et livrées en 24 à 48h.</p>
+          </details>
+          <details>
+            <summary>Et si une fleur vient à manquer ?</summary>
+            <p>Nous travaillons avec les arrivages du marché. Si une variété manque, nous la remplaçons par une fleur équivalente ou supérieure, en gardant l'esprit et la valeur de votre bouquet.</p>
+          </details>
+          <details>
+            <summary>Puis-je joindre un mot au bouquet ?</summary>
+            <p>Bien sûr, c'est même offert. Écrivez votre message au moment de la commande, Flora le recopie à la main sur une jolie carte. Vous pouvez aussi rester anonyme.</p>
+          </details>
+          <details>
+            <summary>Comment fonctionne le retrait en boutique ?</summary>
+            <p>Choisissez « retrait boutique » au moment de commander, votre bouquet vous attend au frais à l'heure convenue, 7 jours sur 7 aux horaires d'ouverture. C'est gratuit.</p>
+          </details>
+          <details>
+            <summary>Fleurissez-vous les mariages et les deuils ?</summary>
+            <p>Oui, c'est notre cœur de métier. Appelez-nous au 05 56 83 56 79 ou passez en boutique, nous préparons ensemble un devis sur mesure.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-marque">
+      <a class="logo logo-footer" href="#accueil">
+        <svg class="logo-brin" viewBox="0 0 26 30" aria-hidden="true"><path d="M13 28V9M13 9c0-5 3.5-7.5 7.5-7.5C20.5 6.5 18 9 13 9Zm0 0c0-5-3.5-7.5-7.5-7.5C5.5 6.5 8 9 13 9Zm0 7.5c0-3.5 2.5-5 5.5-5-.4 3.5-2 5-5.5 5Z" stroke="currentColor" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg>
+        <span class="logo-texte"><span class="logo-ligne">Gambetta <em>fleurs</em></span></span>
+      </a>
+      <p>Artisan fleuriste au cœur d'Arcachon. Bouquets, plantes, fleurs séchées, mariages et deuil, sur le Bassin depuis 2019.</p>
+    </div>
+    <nav class="footer-nav" aria-label="Plan du site">
+      <p class="footer-titre">La maison</p>
+      <a href="#boutique">La boutique</a>
+      <a href="#abonnement">L'abonnement floral</a>
+      <a href="#surmesure">Mariages et deuil</a>
+      <a href="#atelier">L'atelier</a>
+    </nav>
+    <div class="footer-nav">
+      <p class="footer-titre">Nous trouver</p>
+      <p class="footer-adresse">33 avenue Gambetta<br>33120 Arcachon</p>
+      <a href="tel:+33556835679">05 56 83 56 79</a>
+      <a href="mailto:gambettafleurscontact@gmail.com">Nous écrire</a>
+      <a href="https://www.instagram.com/gambettafleurs/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.facebook.com/gambettafleurs" target="_blank" rel="noopener">Facebook</a>
+    </div>
+  </div>
+  <div class="footer-bas">
+    <p>© 2026 Gambetta fleurs, Arcachon · <a href="#legal" data-legal="mentions">Mentions légales</a> · <a href="#legal" data-legal="confidentialite">Confidentialité</a> · <a href="#legal" data-legal="cgv">CGV</a></p>
+    <p class="footer-demo">Maquette de démonstration imaginée par <a href="https://bassinwebflow.fr" target="_blank" rel="noopener">BassinWebFlow</a>. Prix et photos d'illustration.</p>
+  </div>
+</footer>
+
+<!-- Barre panier mobile -->
+<div class="barre-mobile" id="barre-mobile" hidden>
+  <button class="btn btn-plein" type="button" id="barre-mobile-btn">
+    Voir mon panier · <span id="barre-mobile-total">0,00 €</span>
+  </button>
+</div>
+
+<!-- ============ DRAWER PANIER ============ -->
+<div class="voile" id="voile" hidden></div>
+<aside class="panier" id="panier" aria-label="Panier" hidden>
+  <div class="panier-tete">
+    <h2>Votre panier</h2>
+    <button class="btn-fermer" type="button" data-fermer-panier aria-label="Fermer le panier">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="panier-livraison-jauge" id="panier-jauge">
+    <p id="panier-jauge-texte">Plus que 60,00 € pour la livraison offerte</p>
+    <div class="jauge"><span id="panier-jauge-barre"></span></div>
+  </div>
+  <div class="panier-corps" id="panier-corps">
+    <!-- Lignes générées par js/main.js -->
+  </div>
+  <div class="panier-pied" id="panier-pied">
+    <div class="panier-total">
+      <span>Sous-total</span>
+      <strong id="panier-total">0,00 €</strong>
+    </div>
+    <div class="panier-livraison-ligne">
+      <span>Livraison</span>
+      <span id="panier-livraison-info">15 €, offerte dès 60 €</span>
+    </div>
+    <p class="panier-note">Retrait boutique gratuit. Carte manuscrite offerte.</p>
+    <button class="btn btn-plein btn-large" type="button" id="btn-commander">Commander</button>
+    <button class="btn-texte" type="button" id="btn-vider">Vider le panier</button>
+  </div>
+</aside>
+
+<!-- ============ MODALE PRODUIT ============ -->
+<div class="modale" id="modale-produit" role="dialog" aria-modal="true" aria-labelledby="mp-nom" hidden>
+  <div class="modale-boite modale-produit-boite">
+    <button class="btn-fermer" type="button" data-fermer-modale aria-label="Fermer la fiche produit">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <div class="mp-visuel">
+      <img id="mp-img" alt="" width="700" height="875">
+      <span class="mp-badge" id="mp-badge" hidden></span>
+    </div>
+    <div class="mp-corps">
+      <h2 id="mp-nom"></h2>
+      <p class="mp-compo" id="mp-compo"></p>
+      <p class="mp-desc" id="mp-desc"></p>
+      <fieldset class="mp-tailles" id="mp-tailles">
+        <legend>Choisissez la taille</legend>
+        <!-- Tailles générées -->
+      </fieldset>
+      <div class="mp-quantite">
+        <span class="mp-quantite-label" id="mp-qte-label">Quantité</span>
+        <div class="stepper" role="group" aria-labelledby="mp-qte-label">
+          <button type="button" id="mp-moins" aria-label="Réduire la quantité">−</button>
+          <span id="mp-qte" aria-live="polite">1</span>
+          <button type="button" id="mp-plus" aria-label="Augmenter la quantité">+</button>
+        </div>
+      </div>
+      <button class="btn btn-plein btn-large" type="button" id="mp-ajouter">Ajouter au panier · <span id="mp-prix">0 €</span></button>
+      <p class="mp-livraison" id="mp-livraison"></p>
+      <details class="mp-entretien">
+        <summary>Fraîcheur et entretien</summary>
+        <p>Recoupez les tiges en biseau, changez l'eau tous les deux jours et tenez le bouquet loin des radiateurs. Si une variété manque au marché, nous la remplaçons par une équivalente ou supérieure, même esprit, même valeur.</p>
+      </details>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODALE COMMANDE ============ -->
+<div class="modale" id="modale-commande" role="dialog" aria-modal="true" aria-labelledby="mc-titre" hidden>
+  <div class="modale-boite modale-commande-boite" id="mc-boite">
+    <button class="btn-fermer" type="button" data-fermer-modale aria-label="Fermer la commande">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <div class="mc-tete">
+      <h2 id="mc-titre">Votre commande</h2>
+      <ol class="mc-etapes" id="mc-etapes">
+        <li class="active" data-etape="1"><span>1</span> Livraison</li>
+        <li data-etape="2"><span>2</span> Vos infos</li>
+        <li data-etape="3"><span>3</span> Paiement</li>
+      </ol>
+    </div>
+    <div class="mc-corps" id="mc-corps">
+      <!-- Étapes générées par js/main.js -->
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODALE CONFIRMATION (maison, jamais de confirm() natif) ============ -->
+<div class="modale" id="modale-confirm" role="dialog" aria-modal="true" aria-labelledby="conf-titre" hidden>
+  <div class="modale-boite modale-confirm-boite">
+    <h2 id="conf-titre">Vider le panier ?</h2>
+    <p id="conf-texte">Les bouquets de votre panier seront retirés.</p>
+    <div class="conf-actions">
+      <button class="btn btn-ligne" type="button" id="conf-annuler">Garder mon panier</button>
+      <button class="btn btn-plein" type="button" id="conf-valider">Vider le panier</button>
+    </div>
+  </div>
+</div>
+
+<!-- ============ MODALE LÉGALE (mentions / confidentialité / CGV) ============ -->
+<div class="modale" id="modale-legal" role="dialog" aria-modal="true" aria-labelledby="legal-titre" hidden>
+  <div class="modale-boite modale-legal-boite">
+    <button class="btn-fermer" type="button" data-fermer-modale aria-label="Fermer">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+    <h2 id="legal-titre">Mentions légales</h2>
+    <div class="legal-corps" id="legal-corps"></div>
+  </div>
+</div>
+
+<!-- Toasts -->
+<div class="toasts" id="toasts" aria-live="polite"></div>
+
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<!-- Stripe.js : seul script tiers externe autorisé. Stripe INTERDIT de l'auto-héberger
+     (exigence de sécurité PCI), donc exception à la règle "aucun CDN". Idem sur le site en prod. -->
+<script src="https://js.stripe.com/v3/"></script>
+<script src="js/main.js?v=5"></script>
+<script src="js/gsap-animations.js?v=5"></script>
+</body>
+</html>
